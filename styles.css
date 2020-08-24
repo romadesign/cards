@@ -33,3 +33,141 @@ h2{
         font-size: 6rem;
     }
 }
+
+
+
+
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+i {
+  opacity: 0;
+  font-size: 18px;
+  color: #fff;
+  will-change: transform;
+  -webkit-transform: scale(0.1);
+  transform: scale(0.1);
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+h2 {
+  pointer-events: none;
+}
+
+.contenedor {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.contenedor .card {
+  position: relative;
+    width: 300px;
+    overflow: hidden;
+    margin: 10px;
+}
+
+.contenedor .card h2 {
+  z-index: 99;
+    font-family: "Poppins", sans-serif;
+    position: absolute;
+    bottom: 0;
+    right: 88px;
+    font-size: 60px;
+    color: #fff;
+}
+.contenedor .card .fa-arrow-right {
+  z-index: 100;
+    position: absolute;
+    right: 50px;
+    bottom: 22px;
+    cursor: pointer;
+}
+.contenedor .card p {
+  z-index: 99;
+    font-family: sans-serif;
+    position: absolute;
+    top: 18px;
+    right: 10px;
+    color: #fff;
+    opacity: 0.7;
+    font-size: 12px;
+    letter-spacing: 1px;
+    writing-mode: vertical-lr;
+}
+.contenedor .card .pic {
+  height: 200px;
+  background-image: url(https://cdn.pixabay.com/photo/2017/11/27/21/31/computer-2982270_960_720.jpg);
+  background-size: 100% 100%;
+  filter: brightness(0.5);
+}
+.contenedor .card .social {
+  position: absolute;
+    top: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 270px;
+    height: 50px;
+    z-index: 1;
+    cursor: pointer;
+}
+.contenedor .card .social i:nth-of-type(1) {
+  -webkit-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+}
+.contenedor .card .social i:nth-of-type(2) {
+  -webkit-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+}
+.contenedor .card .social i:nth-of-type(3) {
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
+}
+.contenedor .card .social i:nth-of-type(4) {
+  -webkit-transition-delay: 0.1s;
+  transition-delay: 0.1s;
+}
+.contenedor .card:hover i {
+  opacity: 1;
+  -webkit-transform: scale(1);  
+  transform: scale(1);
+}
+.contenedor .card button {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  width: 5px;
+  height: 100px;
+  background-color: #DA4D1D;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  mix-blend-mode: hard-light;
+}
+
+.contenedor .card:hover button {
+  transform: scale(14);
+}
+
+.contenedor .card1 .pic {
+  background-image: url(https://cdn.pixabay.com/photo/2020/04/30/15/34/code-5113374_960_720.jpg);
+}
+
+.contenedor .card1 button {
+  background-color: #2b26c3;
+}
+
